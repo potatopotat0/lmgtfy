@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<!--
+     ____ _  __ __  __ __ __ ____
+    /  _// |/ // / / // //_// __ \
+   _/ / /    // /_/ // ,<  / /_/ /
+  /___//_/|_/ \____//_/|_| \____/
+
+-->
+<html>
+  <head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="keywords" content="potatopotat0,potato space,Google,谷歌,伸手党">
+    <meta name="description" content="等我帮你 Google 吓，伸手党专治～">
+    <title>等我帮你 Google 吓</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" title="lmgtfy">
+    <style type="text/css">
+        .language:link { text-decoration: none;color: blue}
+        .language:hover { text-decoration:underline;color: blue} 
+    </style>
+  </head>
+  <body>
+    <img src="/img/arrow.png" id="arrow">
+    <div class="about" title="关于" onclick="showAbout()">?</div>
+    <div id="msgbox" class="pop-box">
+        <span class="caption">专治各种伸手党</span>
+        <div class="thanks">
+            *本网站同 Google Inc. 冇任何联系，Google 同 Google Logo系谷歌公司嘅唛。
+        </div>
+        <div class="thanks">
+            Powered by <a href="https://intoyour.space" target="_blank">potatopotat0</a>.
+        </div>
+        <div class="readit" onclick="hideAbout();">我知道了</div>
+    </div>
+    <div id="mask" class="mask"></div>
+    <div class="container">
+        <div class="title0">
+            <h1 class="title">要我帮你<img src="/img/google_logo.png" class="logo">一下么？</h1>
+            <div class="search-box">
+                <input type="text" class="search-text" id="kw">
+            </div>
+            <div class="search-button">
+                <button class="btn" id="search">
+                    <span class="sicon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
+                    <span class="stext">Google 搜尋</span>
+                </button>
+                <button class="btn" id="search2">&nbsp;好手气&nbsp;</button>
+            </div>
+        </div>
+        <div id="instructions">
+            Google 提供：
+            <a class="language" href="/zh-hans">中文（简体）</a> 
+            <a class="language" href="/zh-hant">中文（繁體）</a> 
+            <a class="language" href="/en-us">English (US)</a> 
+            <br><br>輸入一個問題，然後按 Google 搜尋
+        </div>
+        <div class="link" style="display: none" id="link">
+            <input type="text" readonly id="lmgtfyLink" class="copyable">
+            <div>
+                <button class="link_button" id="copy" data-clipboard-target="#lmgtfyLink">復制</button>
+                <button class="link_button" id="go" target="_blank">預覽</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://intoyour.space" target="_blank">potatopotat0</a>. All Rights Reserved.</span>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/clipboard.js"></script>
+        <script src="/js/lmgtfy.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<!--
+     ____ _  __ __  __ __ __ ____
+    /  _// |/ // / / // //_// __ \
+   _/ / /    // /_/ // ,<  / /_/ /
+  /___//_/|_/ \____//_/|_| \____/
+
+-->
+<html>
+  <head lang="zh-cn">
+    <meta charset="UTF-8">
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <meta name="keywords" content="potatopotat0,potato space,Google,谷歌,伸手党">
+    <meta name="description" content="Let me Google that for you">
+    <title>レト　ミ　ググル　ザート　フォー　ユー</title>
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/opensearch.xml" rel="search" type="application/opensearchdescription+xml" title="lmgtfy">
+    <style type="text/css">
+        .language:link { text-decoration: none;color: blue}
+        .language:hover { text-decoration:underline;color: blue} 
+    </style>
+  </head>
+  <body>
+    <img src="/img/arrow.png" id="arrow">
+    <div class="about" title="About" onclick="showAbout()">?</div>
+    <div id="msgbox" class="pop-box">
+        <span class="caption">フォー ワン フー イス ツュ レーイジ ツュ ググル イット</span>
+        <div class="thanks">
+            *ウィ ハヴ　ノー リレーションシップ ウィス <br> ググル インック、「ググル」　アンド　「ググル」　ロゴ アー トレイドマクス　オフ　ググル　インク。
+        </div>
+        <div class="thanks">
+            パウワー　バイ　<a href="https://intoyour.space" target="_blank">potatopotat0</a>.
+        </div>
+        <div class="readit" onclick="hideAbout();">オーケイー</div>
+    </div>
+    <div id="mask" class="mask"></div>
+    <div class="container">
+        <div class="title0">
+            <h1 class="title">レト　ミ<img src="/img/google_logo.png" class="logo">ザート　フォ　ユー</h1>
+            <div class="search-box">
+                <input type="text" class="search-text" id="kw">
+            </div>
+            <div class="search-button">
+                <button class="btn" id="search">
+                    <span class="sicon"><svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></span>
+                    <span class="stext">ググル　サーチー</span>
+                </button>
+                <button class="btn" id="search2">&nbsp;アイ　エム　フィーリング　ラキー&nbsp;</button>
+            </div>
+        </div>
+        <div id="instructions">
+            ググル　オファド　イン：
+            <a class="language" href="/en">English (US)</a> 
+            <a class="language" href="/zh-hans">中文（简体）</a> 
+            <a class="language" href="/zh-hant">中文（繁體）</a> 
+            <a class="language" href="/zh-yue">中文（粤语）</a> 
+            <br><br>タイプ　アン クェスチョン、アンド　クリク　「フフル　サーチー」
+        </div>
+        <div class="link" style="display: none" id="link">
+            <input type="text" readonly id="lmgtfyLink" class="copyable">
+            <div>
+                <button class="link_button" id="copy" data-clipboard-target="#lmgtfyLink">コッピ　ツュ　クリップボード</button>
+                <button class="link_button" id="go" target="_blank">プレヴュー</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <span>&copy; <script>document.write(new Date().getFullYear())</script> <a href="https://intoyour.space" target="_blank">potatopotat0</a>.　オー　ライツ　リサブド</span>
+        <script src="/js/jquery.min.js"></script>
+        <script src="/js/clipboard.js"></script>
+        <script src="/js/lmgtfy.js"></script>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+
+</head>
+<body>
+  <script> 
+     !function () {
+      var lang = (navigator.language || navigator.browserLanguage).toLowerCase();
+      if(lang == 'zh' || lang == 'zh-cn' || lang == 'zh-sg' || lang == 'zh-hans' || lang == 'zh-hans-cn'|| lang == 'zh-hans-sg'){
+          window.location.replace('/zh-hans/');
+      } else if(lang == 'zh-tw'||lang == 'zh-hk' || lang == 'zh-mo' || lang == 'zh-hant' || lang == 'zh-hant-tw' || lang == 'zh-hant-hk' || lang == 'zh-hant-mo') {
+          window.location.replace('/zh-hant/');
+      } else {
+          window.location.replace('/en-us/');
+      }
+    }()
+  </script>
+</body>
+</html>
