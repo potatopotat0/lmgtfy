@@ -23,6 +23,6 @@ die(json_encode($result));
  * @return 缩短后的网址
  */
 function shortUrl($longUrl) {
-    $result = json_decode(@file_get_contents('http://api.uomg.com/api/long2dwz?dwzapi=tcn&url='.urlencode($longUrl)),true)["ae_url"];
+    $result = json_decode(@file_get_contents('https://sohu.gg/api/?key=PSvFfyYNPtlw&format=json&url='.urlencode($longUrl)),true)["short"];
     return $result? $result: $longUrl;
 }
