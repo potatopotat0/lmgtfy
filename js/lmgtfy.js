@@ -32,7 +32,7 @@ $(document).ready(function(){
         })
     });
     $('#search2').on('click',function(){
-        if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + urlEncode($('#kw').val());}else{window.location = 'https://g.aimisaiko.top/search?q=' + urlEncode($('#kw').val());}
+        if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + urlEncode($('#kw').val());}else{window.location = 'https://www.google.aimisaiko.top/search?q=' + urlEncode($('#kw').val());}
     });
     var $container = $('.container');
     $container.on('click','#go',function(){
