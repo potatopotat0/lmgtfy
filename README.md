@@ -24,12 +24,8 @@
 <img alt="License" src="https://img.shields.io/github/license/potatopotat0/lmgtfy.svg?style=flat-square"/>
 </p>
 
----
-
-为了稳定性，建议将 `get.php` 中 `shortUrl` 函数的短网址API替换成自己的。
-
 ## Author
 
-**lmgtfy** © [potatopotat0](https://github.com/potatopotat0) & [Moedog](https://github.com/xb2016), Released under the [MIT](./LICENSE) License.<br>
+**lmgtfy** © [potatopotat0](https://github.com/potatopotat0), Released under the [MIT](./LICENSE) License.<br>
 
 > Blog [Potato Space](https://intoyour.space) · GitHub [@potatopotat0](https://github.com/potatopotat0) · Twitter [@potatosuk1](https://twitter.com/potatosuk1)

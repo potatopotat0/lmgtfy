@@ -77,7 +77,7 @@ $(document).ready(function(){
                         }, 1000, function () {
                             $instructions.html('<strong>イズ　イット　ザット　ディフィクルト　フォー　ユー？</strong>');
                             setTimeout(function (){
-                                if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + encodeURIComponent(kw);}else{window.location = 'https://www.loli.cab/search?q=' + encodeURIComponent(kw);}
+                                if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + encodeURIComponent(kw);}else{window.location = 'https://www.google.aimisaiko.top/search?q=' + encodeURIComponent(kw);}
                             }, 2000);
                         })
                     }
