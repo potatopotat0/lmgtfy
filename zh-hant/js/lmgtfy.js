@@ -32,7 +32,7 @@ $(document).ready(function(){
         })
     });
     $('#search2').on('click',function(){
-        if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + urlEncode($('#kw').val());}else{window.location = 'https://www.google.aimisaiko.top/search?q=' + urlEncode($('#kw').val());}
+        if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + urlEncode($('#kw').val());}else{window.location = 'https://www.google.lolicon.work/search?q=' + urlEncode($('#kw').val());}
     });
     var $container = $('.container');
     $container.on('click','#go',function(){
@@ -77,7 +77,7 @@ $(document).ready(function(){
                         }, 1000, function () {
                             $instructions.html('<strong>這對你來説有那麽難嗎？</strong>');
                             setTimeout(function (){
-                                if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + encodeURIComponent(kw);}else{window.location = 'https://www.google.aimisaiko.top/search?q=' + encodeURIComponent(kw);}
+                                if($(".search-text").attr("data-site")=="google"){window.location = 'https://www.google.com.hk/search?q=' + encodeURIComponent(kw);}else{window.location = 'https://www.google.lolicon.work/search?q=' + encodeURIComponent(kw);}
                             }, 2000);
                         })
                     }
