@@ -23,6 +23,6 @@ die(json_encode($result));
  * @return 缩短后的网址
  */
 function shortUrl($longUrl) {
-    $result = json_decode(@file_get_contents('https://ptt.pub/api/?url='.urlencode($longUrl)),true)["url"];
+    $result = json_decode(@file_get_contents('https://api.lolicon.ltd/short?url='.urlencode($longUrl)),true)["url"];
     return $result? $result: $longUrl;
 }
